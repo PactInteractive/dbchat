@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+:root {
+  font-size: 20px;
+}
+
+.mesh1 {
+  background-color: hsla(240, 96%, 35%, 1);
+  background-image: radial-gradient(at 77% 93%, hsla(255, 97%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 54% 0%, hsla(266, 55%, 58%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 82%, hsla(213, 81%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 73% 46%, hsla(240, 100%, 22%, 1) 0px, transparent 50%);
+}
+
+details summary {
+  position: relative;
+  list-style-type: ' ';
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+details summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+}
+
+details[open] summary::after {
+  content: '-';
+}

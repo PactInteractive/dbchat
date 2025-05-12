@@ -1,0 +1,15 @@
+{
+  "name": "dbchat-website",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"bun run serve\" \"bun run build -- --watch\"",
+    "build": "bunx @tailwindcss/cli -i ./src/style.css -o ./style.css",
+    "serve": "serve ./ -p 3000"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "concurrently": "^9.1.2",
+    "serve": "^14.2.4",
+    "tailwindcss": "^4.1.6"
+  }
+}

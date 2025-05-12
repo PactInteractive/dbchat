@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:url" content="/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DBChat - Chat with your Database">
+    <meta property="og:description" content="Use AI to chat with a MySQL/PostgreSQL database using Google/OpenAI/xAI models">
+    <meta property="og:image" content="https://pactinteractive.github.io/dbchat/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="/">
+    <meta name="twitter:title" content="DBChat - Chat with your Database">
+    <meta name="twitter:description" content="Use AI to chat with a MySQL/PostgreSQL database using Google/OpenAI/xAI models">
+    <meta name="twitter:image" content="https://pactinteractive.github.io/dbchat/logo.png">
+
+		<link rel="icon" type="image/png" href="./logo.png">
+		<link href="./style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- <header class="bg-stone-100/50 sticky top-0 backdrop-blur-2xl">
+      <nav>
+        <ul class="flex gap-4 items-center justify-center py-5">
+          <li><a href="#who">Who is it for</a></li>
+          <li><a href="#how">How to get started</a></li>
+          <li><a href="#faq">Frequent questions</a></li>
+        </ul>
+      </nav>
+    </header> -->
+
+    <section class="bg-stone-50 mesh1 text-white py-16 pt-12 flex flex-col gap-12">
+      <div class="max-w-3xl mx-auto flex flex-col gap-10 items-center justify-center">
+        <hgroup class="flex flex-col gap-4 items-center justify-center text-center">
+          <img
+            src="./logo.png"
+            alt="DBChat - Chat with your Database"
+            class="w-32 h-32 rounded-full"
+          />
+
+          <h1 class="text-6xl font-bold">Chat with your Database</h1>
+
+          <p class="text-2xl font-light text-balance">
+            DBChat is your AI-powered gateway to database exploration.
+            <br />
+            Effortlessly create queries for your MySQL and PostgreSQL databases
+            using natural language.
+          </p>
+        </hgroup>
+
+        <a
+          href="https://vdsabev.gumroad.com/l/dbchat"
+          target="_blank"
+          class="rounded-xl shadow-2xl shadow-emerald-900/80 ring ring-emerald-1000 bg-emerald-200 text-emerald-900 px-5 py-3 font-bold text-nowrap"
+        >
+          Download the Desktop App
+        </a>
+      </div>
+
+      <div class="w-full max-w-4xl aspect-[16/9] mx-auto">
+        <video
+          src="./demo-3x.mp4"
+          class="bg-white w-full h-full rounded-4xl shadow-lg outline-16 outline-white/70"
+          controls
+        ></video>
+      </div>
+    </section>
+
+    <section id="features" class="max-w-3xl mx-auto my-16">
+      <h2 class="text-3xl font-bold mb-5">Features</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="border border-stone-300 rounded-lg bg-white p-5 min-h-48">
+          <h3 class="mb-1 font-bold">💬 Natural Language Queries</h3>
+          <p>
+            Write SQL queries using everyday language - no prior SQL expertise
+            needed.
+          </p>
+        </div>
+
+        <div class="border border-stone-300 rounded-lg bg-white p-5">
+          <h3 class="mb-1 font-bold">🔑 Bring Your Own Keys</h3>
+          <p>Save on expensive AI subscriptions by using your own API keys.</p>
+        </div>
+
+        <div class="border border-stone-300 rounded-lg bg-white p-5 min-h-48">
+          <h3 class="mb-1 font-bold">🧠 Flexible AI Power</h3>
+          <p>Choose your favorite from leading AI providers like Google, OpenAI, and xAI.</p>
+        </div>
+
+        <div class="border border-stone-300 rounded-lg bg-white p-5 min-h-48">
+          <h3 class="mb-1 font-bold">🖥️ Self-Hosted</h3>
+          <p>
+            No monthly bills! Roll your own server or
+            <a class="text-indigo-600" href="https://vdsabev.gumroad.com/l/dbchat" target="_blank">get the desktop app</a>&mdash;one-time
+            purchase, free lifetime updates!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="who" class="max-w-3xl mx-auto my-16 rounded-3xl">
+      <h2 class="text-3xl font-bold mb-5">Who is it for</h2>
+      <p class="text-xl mb-5">
+        DBChat is for anyone who wants to explore their MySQL or PostgreSQL
+        databases without writing SQL. Perfect for:
+      </p>
+
+      <div class="flex gap-5">
+        <div class="border flex-1 border-stone-300 bg-stone-50 text-stone-900 rounded-lg p-5">
+          <p>
+            <strong>Data analysts</strong> who want to quickly query databases
+            using natural language and understand AI-generated SQL.
+          </p>
+        </div>
+
+        <div class="border flex-1 border-stone-300 bg-stone-50 text-stone-900 rounded-lg p-5">
+          <p>
+            <strong>Developers</strong> looking to streamline database
+            exploration without complex query writing.
+          </p>
+        </div>
+
+        <div class="border flex-1 border-stone-300 bg-stone-50 text-stone-900 rounded-lg p-5">
+          <p>
+            <strong>Business owners</strong> needing fast insights from their
+            data without technical expertise.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quickstart" class="max-w-3xl mx-auto my-16">
+      <hgroup>
+        <h2 class="text-3xl font-bold mb-5">Quickstart</h2>
+        <p class="text-xl mb-3">Get started with DBChat in minutes</p>
+        <p>Download the desktop app&mdash;one-time purchase, free lifetime updates!</p>
+        <p class="mt-6 mb-8">
+          <a
+            href="https://vdsabev.gumroad.com/l/dbchat"
+            target="_blank"
+            class="rounded-xl shadow-md shadow-emerald-900/80 ring ring-emerald-1000 bg-emerald-200 text-emerald-900 px-5 py-3 font-bold text-nowrap"
+          >
+            Download the Desktop App
+          </a>
+        </p>
+      </hgroup>
+
+      <p class="text-xl mt-6 mb-1">Or run the source code locally</p>
+      <ol>
+        <li class="p-3 bg-white">
+          <div class="flex items-baseline gap-2">
+            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white">1</span>
+            Clone the repo, install dependencies, and start the server:
+          </div>
+
+          <pre class="rounded-lg mt-3 bg-stone-800 p-3 text-white"><code>git clone git@github.com:PactInteractive/dbchat.git
+cd dbchat
+bun install
+bun dev</code></pre>
+        </li>
+
+        <li class="p-3 bg-white">
+          <div class="flex items-baseline gap-2">
+            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white">2</span>
+            Connect a database
+          </div>
+
+          <p>Link to your MySQL or PostgreSQL database.</p>
+        </li>
+
+        <li class="p-3 bg-white">
+          <div class="flex items-baseline gap-2">
+            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white">3</span>
+            Add an AI API key
+          </div>
+
+          <p>
+            Use your favorite AI provider or get a Gemini key from
+            <a class="text-indigo-600" href="https://aistudio.google.com/app/apikey" target="_blank" rel="nofollow">Google AI Studio</a>.
+          </p>
+        </li>
+
+        <li class="p-3 bg-white">          
+          <div class="flex items-baseline gap-2">
+            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white">4</span>
+            Start chatting
+          </div>
+
+          <p>
+            Open
+            <a class="text-indigo-600" href="http://localhost:3000" target="_blank">localhost:3000</a>
+            and prompt away!
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="faq" class="max-w-3xl mx-auto mb-14">
+      <h2 class="text-3xl font-bold mb-5">Frequent Questions</h2>
+
+      <div>
+        <details class="py-3 border-t border-stone-300">
+          <summary class="text-lg font-bold cursor-pointer">
+            How does DBChat work?
+          </summary>
+
+          <p>
+            DBChat is distributed as a desktop app that lets you query MySQL and PostgreSQL
+            databases using natural language. It connects to your local database,
+            uses your AI API key (Google, OpenAI, or xAI), and generates SQL
+            queries based on your prompts, which you can review, copy, or execute.
+          </p>
+
+          <p class="mt-2">
+            You can also use the source code to run your own server and web app.
+          </p>
+        </details>
+
+        <details class="py-3 border-t border-stone-300">
+          <summary class="text-lg font-bold cursor-pointer">
+            What databases does DBChat support?
+          </summary>
+
+          DBChat supports MySQL and PostgreSQL. For other databases, contact us on
+          <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>.
+        </details>
+
+        <details class="py-3 border-t border-stone-300">
+          <summary class="text-lg font-bold cursor-pointer">
+            Which AI APIs does DBChat support?
+          </summary>
+
+          DBChat supports Google’s Gemini, OpenAI, and xAI. Need another API?
+          Reach out on
+          <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>.
+        </details>
+
+        <details class="py-3 border-t border-stone-300">
+          <summary class="text-lg font-bold cursor-pointer">
+            How secure is DBChat?
+          </summary>
+
+          DBChat runs locally, storing your database credentials and API keys on
+          your machine. The AI only reads your database schema unless you explicitly share
+          query results in the chat.
+        </details>
+
+        <details class="py-3 border-t border-stone-300">
+          <summary class="text-lg font-bold cursor-pointer">
+            What’s your refund policy?
+          </summary>
+
+          For refund details, visit our
+          <a class="text-indigo-600" href="https://vdsabev.gumroad.com/l/dbchat">Gumroad page</a>.
+        </details>
+
+        <details class="py-3 border-t border-stone-300">
+          <summary class="text-lg font-bold cursor-pointer">
+            I need another feature, can you do that for me?
+          </summary>
+
+          Let us know what you need on
+          <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>
+          or file an issue on
+          <a class="text-indigo-600" href="https://github.com/PactInteractive/dbchat/issues" target="_blank">GitHub</a>.
+        </details>
+      </div>
+    </section>
+
+    <footer class="bg-stone-50 py-8 border-t border-stone-300">
+      <div class="max-w-3xl mx-auto text-center text-sm">
+        <p>
+          Made with ❤️ by
+          <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">@vdsabev</a> and
+          <a class="text-indigo-600" href="https://x.com/boyankostov" target="_blank" rel="me">@boyankostov</a>
+        </p>
+
+        <p>
+          The code is 100% free and open-source under the
+          <a class="text-indigo-600" href="https://github.com/PactInteractive/dbchat/blob/master/LICENSE" target="_blank">AGPL3.0 license</a>.
+        </p>
+
+        <p class="mt-3">
+          <a href="https://github.com/PactInteractive/dbchat/issues" target="_blank">Report an Issue</a>
+          &bull;
+          <a href="https://vdsabev.gumroad.com/l/dbchat" target="_blank">Download the Desktop App</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
