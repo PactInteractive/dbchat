@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/manrope/manrope-bold.woff2") format("woff2"), /* Modern browsers */
+  url("../fonts/manrope/manrope-bold.woff") format("woff"), /* Legacy browsers */
+  url("../fonts/manrope/manrope-bold.otf") format("truetype"); /* Android, iOS */
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/manrope/manrope-regular.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-regular.woff") format("woff"),
+  url("../fonts/manrope/manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }

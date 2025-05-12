@@ -1,0 +1,20 @@
+{
+  "name": "dbchat-native",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "dev.android": "tauri android dev",
+    "build": "tauri build",
+    "build.mac_x64": "tauri build --target x86_64-apple-darwin",
+    "build.mac_arm64": "tauri build --target aarch64-apple-darwin"
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-dialog": "~2.2.1",
+    "@tauri-apps/plugin-http": "~2.4.3"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.5.0"
+  }
+}
