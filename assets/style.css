@@ -599,6 +599,12 @@
   .bg-stone-100 {
     background-color: var(--color-stone-100);
   }
+  .bg-stone-100\/80 {
+    background-color: color-mix(in srgb, oklch(97% 0.001 106.424) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-stone-100) 80%, transparent);
+    }
+  }
   .bg-stone-400\/20 {
     background-color: color-mix(in srgb, oklch(70.9% 0.01 56.259) 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -932,8 +938,17 @@
   .underline-offset-4 {
     text-underline-offset: 4px;
   }
+  .opacity-20 {
+    opacity: 20%;
+  }
   .opacity-30 {
     opacity: 30%;
+  }
+  .opacity-35 {
+    opacity: 35%;
+  }
+  .opacity-40 {
+    opacity: 40%;
   }
   .opacity-50 {
     opacity: 50%;
