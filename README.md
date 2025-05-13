@@ -36,7 +36,7 @@
 </p>
 
 <p align="center">
-  <video src="https://raw.githubusercontent.com/PactInteractive/dbchat/gh-pages/demo-3x.mp4" width="100%" />
+  <video src="https://raw.githubusercontent.com/PactInteractive/dbchat/gh-pages/assets/demo-3x.mp4" width="100%" />
 </p>
 
 ## ✨ Features
