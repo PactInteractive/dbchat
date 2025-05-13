@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"bun run serve\" \"bun run build -- --watch\"",
-    "build": "bunx @tailwindcss/cli -i ./style.css -o ./dist/style.css",
-    "serve": "browser-sync start --server --files './index.html, ./dist/style.css' --port 3000"
+    "build": "bunx @tailwindcss/cli -i ./style.css -o ./assets/style.css",
+    "serve": "browser-sync start --server --files './index.html, ./assets/style.css' --port 3000"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.6",
