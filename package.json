@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"bun run serve\" \"bun run build -- --watch\"",
-    "build": "bunx @tailwindcss/cli -i ./src/style.css -o ./style.css",
+    "build": "bunx @tailwindcss/cli -i ./style.css -o ./dist/style.css",
     "serve": "serve ./ -p 3000"
   },
   "devDependencies": {
