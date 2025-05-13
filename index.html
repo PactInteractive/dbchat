@@ -21,19 +21,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <defs class="hidden">
+      <svg id="icon-download" width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#icon-download-clip)">
+          <path d="M13.5 2C13.5 1.17031 12.8297 0.5 12 0.5C11.1703 0.5 10.5 1.17031 10.5 2V13.3766L7.05938 9.93594C6.47344 9.35 5.52188 9.35 4.93594 9.93594C4.35 10.5219 4.35 11.4734 4.93594 12.0594L10.9359 18.0594C11.5219 18.6453 12.4734 18.6453 13.0594 18.0594L19.0594 12.0594C19.6453 11.4734 19.6453 10.5219 19.0594 9.93594C18.4734 9.35 17.5219 9.35 16.9359 9.93594L13.5 13.3766V2ZM3 17C1.34531 17 0 18.3453 0 20V21.5C0 23.1547 1.34531 24.5 3 24.5H21C22.6547 24.5 24 23.1547 24 21.5V20C24 18.3453 22.6547 17 21 17H16.2422L14.1188 19.1234C12.9469 20.2953 11.0484 20.2953 9.87656 19.1234L7.75781 17H3ZM20.25 19.625C20.5484 19.625 20.8345 19.7435 21.0455 19.9545C21.2565 20.1655 21.375 20.4516 21.375 20.75C21.375 21.0484 21.2565 21.3345 21.0455 21.5455C20.8345 21.7565 20.5484 21.875 20.25 21.875C19.9516 21.875 19.6655 21.7565 19.4545 21.5455C19.2435 21.3345 19.125 21.0484 19.125 20.75C19.125 20.4516 19.2435 20.1655 19.4545 19.9545C19.6655 19.7435 19.9516 19.625 20.25 19.625Z" />
+        </g>
+        <defs>
+          <clipPath id="icon-download-clip">
+            <rect width="24" height="24" fill="currentColor" />
+          </clipPath>
+        </defs>
+      </svg>
+    </defs>
   </head>
 
-  <body>
-    <section class="bg-stone-50 mesh1 text-white py-16 pt-12 flex flex-col gap-12">
-      <div class="max-w-3xl mx-auto flex flex-col gap-10 items-center justify-center">
+  <body class="bg-stone-100 text-stone-900">
+    <section class="py-16 pt-12 flex flex-col gap-24">
+      <div class="max-w-5xl mx-auto flex flex-col gap-10 items-center justify-center">
         <hgroup class="flex flex-col gap-4 items-center justify-center text-center">
           <img
-            src="./assets/logo.png"
+            src="./assets/app-icon.png"
             alt="DBChat - Chat with your Database"
             class="w-32 h-32 rounded-full"
           />
 
-          <h1 class="text-6xl font-bold">Chat with your Database</h1>
+          <h1 class="display-font font-bold">Chat with your Database</h1>
 
           <p class="text-2xl font-light text-balance">
             DBChat is your AI-powered gateway to database exploration.
@@ -43,19 +56,30 @@
           </p>
         </hgroup>
 
-        <a
-          href="https://vdsabev.gumroad.com/l/dbchat"
-          target="_blank"
-          class="rounded-xl shadow-2xl shadow-emerald-900/80 ring ring-emerald-1000 bg-emerald-200 text-emerald-900 px-5 py-3 font-bold text-nowrap"
-        >
-          Download the Desktop App
-        </a>
+        <div class="flex items-center justify-center gap-6 font-bold text-2xl">
+          <a
+            href="https://vdsabev.gumroad.com/l/dbchat"
+            target="_blank"
+            class="flex gap-3 items-center bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white  border border-green-600 text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
+          >
+            <svg width="24" height="25" viewBox="0 0 24 25" class="fill-green-200 group-hover:fill-white">
+              <use href="#icon-download"></use>
+            </svg>
+
+            Buy the Desktop App
+          </a>
+          or
+          <a 
+            href="#quickstart"
+            class="bg-gradient-to-r from-white/10 to-white/70 rounded-full px-9 py-4  text-2xl font-bold text-nowrap border border-stone-300 text-stone-900 shadow-2xl shadow-stone-900/15 hover:shadow-xl hover:shadow-stone-900/15 transition-all duration-200 hover:border-stone-300"
+          >Self-Host for Free</a>
+        </div>
       </div>
 
-      <div class="w-full max-w-4xl aspect-[16/9] mx-auto">
+      <div class="w-full max-w-5xl bg-white  mx-auto shadow-lg p-4 rounded-[44px]">
         <video
           src="./assets/demo-3x.mp4"
-          class="bg-white w-full h-full rounded-4xl shadow-lg outline-16 outline-white/70"
+          class="w-full aspect-[16/9] rounded-[28px]"
           controls
         ></video>
       </div>
@@ -99,41 +123,44 @@
         databases without writing SQL. Perfect for:
       </p>
 
-      <div class="flex gap-5 border-t border-stone-300 text-xl pt-12">
-        <div class="flex gap-3">
-          <div>
-            <img src="./assets/check.png" alt="">
+      <div class="border-t border-stone-300 pt-12 mt-12 overflow-x-scroll">
+        <div class="flex gap-6 text-xl px-4 md:px-0">
+          <div class="flex flex-1 min-w-2/5 gap-3">
+            <div class="flex-1 min-w-12 aspect-square">
+              <img src="./assets/check.png" alt="">
+            </div>
+            <p>
+              <strong class="text-green-600">Data analysts</strong> who want to quickly query databases
+              using natural language and understand AI-generated SQL.
+            </p>
           </div>
-          <p>
-            <strong class="text-green-600">Data analysts</strong> who want to quickly query databases
-            using natural language and understand AI-generated SQL.
-          </p>
-          
-        <div class="flex gap-3">
-          <div>
-            <img src="./assets/check.png" alt="">
+            
+          <div class="flex flex-1 min-w-2/5 gap-3">
+            <div class="flex-1 min-w-12 aspect-square">
+              <img src="./assets/check.png" alt="">
+            </div>
+            <p>
+              <strong class="text-green-600">Developers</strong> looking to streamline database
+              exploration without complex query writing.
+            </p>
           </div>
-          <p>
-            <strong class="text-green-600">Developers</strong> looking to streamline database
-            exploration without complex query writing.
-          </p>
-        </div>
 
-        <div class="flex gap-3">
-          <div>
-            <img src="./assets/check.png" alt="">
+          <div class="flex flex-1 min-w-2/5 gap-3">
+            <div class="flex-1 min-w-12 aspect-square">
+              <img src="./assets/check.png" alt="">
+            </div>
+            <p>
+              <strong class="text-green-600">Business owners</strong> needing fast insights from their
+              data without technical expertise.
+            </p>
           </div>
-          <p>
-            <strong class="text-green-600">Business owners</strong> needing fast insights from their
-            data without technical expertise.
-          </p>
         </div>
       </div>
     </section>
 
     <section id="quickstart" class="max-w-3xl mx-auto my-16">
       <hgroup>
-        <h2 class="text-3xl font-bold mb-5">Quickstart</h2>
+        <h2 class="display-font font-bold mb-4 text-center">Quickstart</h2>
         <p class="text-xl mb-3">Get started with DBChat in minutes</p>
         <p>Download the desktop app&mdash;one-time purchase, free lifetime updates!</p>
         <p class="mt-6 mb-8">
