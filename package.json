@@ -4,12 +4,12 @@
   "scripts": {
     "dev": "concurrently \"bun run serve\" \"bun run build -- --watch\"",
     "build": "bunx @tailwindcss/cli -i ./style.css -o ./dist/style.css",
-    "serve": "serve ./ -p 3000"
+    "serve": "browser-sync start --server --files './index.html, ./dist/style.css' --port 3000"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.6",
+    "browser-sync": "^3.0.4",
     "concurrently": "^9.1.2",
-    "serve": "^14.2.4",
     "tailwindcss": "^4.1.6"
   }
 }
