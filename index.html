@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,9 +37,9 @@
   </head>
 
   <body class="bg-stone-100 text-stone-900">
-    <section class="pt-12 flex flex-col gap-24">
-      <div class="max-w-5xl mx-auto flex flex-col gap-10 items-center justify-center">
-        <hgroup class="flex flex-col gap-4 items-center justify-center text-center">
+    <section class="flex flex-col gap-24 px-4 pt-12">
+      <div class="flex flex-col items-center justify-center gap-10 max-w-5xl mx-auto">
+        <hgroup class="flex flex-col items-center justify-center gap-4 text-center">
           <img
             src="./assets/images/app-icon.png"
             alt="DBChat - Chat with your Database"
@@ -48,7 +48,7 @@
 
           <h1 class="display-font font-bold">Chat with your Database</h1>
 
-          <p class="text-2xl font-light text-balance">
+          <p class="text-2xl font-light">
             DBChat is your AI-powered gateway to database exploration.
             <br />
             Effortlessly create queries for your MySQL and PostgreSQL databases
@@ -56,22 +56,21 @@
           </p>
         </hgroup>
 
-        <div class="flex items-center justify-center gap-6 font-bold text-2xl">
+        <div class="flex flex-col lg:flex-row lg:items-center gap-6 font-bold text-2xl text-center">
           <a
             href="https://vdsabev.gumroad.com/l/dbchat"
             target="_blank"
-            class="flex gap-3 items-center bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white  border border-green-600 text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
+            class="flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white border border-green-600 text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
           >
             <svg width="24" height="25" viewBox="0 0 24 25" class="fill-green-200 group-hover:fill-white">
               <use href="#icon-download"></use>
             </svg>
-
             Buy the Desktop App
           </a>
           or
-          <a 
-            href="#quickstart"
-            class="bg-gradient-to-r from-white/10 to-white/70 rounded-full px-9 py-4  text-2xl font-bold text-nowrap border border-stone-300 text-stone-900 shadow-2xl shadow-stone-900/15 hover:shadow-xl hover:shadow-stone-900/15 transition-all duration-200 hover:border-stone-300"
+          <a
+            href="#self-host"
+            class="bg-gradient-to-r from-white/10 to-white/70 rounded-full px-9 py-4 text-2xl font-bold text-nowrap border border-stone-300 text-stone-900 shadow-2xl shadow-stone-900/15 hover:shadow-xl hover:shadow-stone-900/15 transition-all duration-200 hover:border-stone-300"
           >Self-Host for Free</a>
         </div>
       </div>
@@ -87,79 +86,81 @@
       </div>
     </section>
 
-    <section id="features" class="max-w-4xl mx-auto mt-24">
-      <div class="grid grid-cols-2 gap-16">
+    <section id="features" class="max-w-4xl mx-auto mt-24 px-4">
+      <div class="grid lg:grid-cols-2 gap-16">
         <div class="flex gap-6">
-          <div class="flex items-center justify-center rounded-full flex-1 min-w-28 h-28 bg-blue-400/25">
-            <img src="./assets/images/message.png" alt="Message icon" class="w-16 h-16" />
+          <div class="flex items-center justify-center min-w-28 w-28 h-28 rounded-full bg-blue-400/25">
+            <img class="w-16 h-16"  src="./assets/images/message.png" alt="Message icon" aria-hidden="true" />
           </div>
-          <div>
-            <h3 class="font-bold text-3xl tracking-tight mb-2">Natural Language Queries</h3>
+          <hgroup>
+            <h3 class="mb-2 font-bold text-3xl tracking-tight">Natural Language Queries</h3>
             <p class="text-xl">
               Write SQL queries using everyday language - no prior SQL expertise
               needed.
             </p>
-          </div>
+          </hgroup>
         </div>
 
         <div class="flex gap-6">
-          <div class="flex items-center justify-center rounded-full flex-1 min-w-28 h-28 bg-yellow-400/30">
-            <img src="./assets/images/keys.png" alt="Keys icon" class="w-16 h-16" />
+          <div class="flex items-center justify-center min-w-28 w-28 h-28 rounded-full bg-yellow-400/30">
+            <img class="w-16 h-16"  src="./assets/images/keys.png" alt="Keys icon" aria-hidden="true" />
           </div>
-          <div>
-            <h3 class="font-bold text-3xl tracking-tight mb-2">Bring Your Own Keys</h3>
+          <hgroup>
+            <h3 class="mb-2 font-bold text-3xl tracking-tight">Bring Your Own Keys</h3>
             <p class="text-xl">Save on expensive AI subscriptions by using your own API keys.</p>
-          </div>
+          </hgroup>
         </div>
 
         <div class="flex gap-6">
-          <div class="flex items-center justify-center rounded-full flex-1 min-w-28 h-28 bg-blue-400/25">
-            <img src="./assets/images/robot.png" alt="Robot icon" class="w-16 h-16" />
+          <div class="flex items-center justify-center min-w-28 w-28 h-28 rounded-full bg-blue-400/25">
+            <img class="w-16 h-16"  src="./assets/images/robot.png" alt="Robot icon" aria-hidden="true" />
           </div>
-          <div>
-            <h3 class="font-bold text-3xl tracking-tight mb-2">Flexible AI Power</h3>
+          <hgroup>
+            <h3 class="mb-2 font-bold text-3xl tracking-tight">Flexible AI Power</h3>
             <p class="text-xl">Choose your favorite from leading AI providers like Google, OpenAI, and xAI.</p>
-          </div>
+          </hgroup>
         </div>
 
         <div class="flex gap-6">
-          <div class="flex items-center justify-center rounded-full flex-1 min-w-28 h-28 bg-stone-400/20">
-            <img src="./assets/images/laptop.png" alt="Laptop icon" class="w-16 h-16" />
+          <div class="flex items-center justify-center min-w-28 w-28 h-28 rounded-full bg-stone-400/20">
+            <img class="w-16 h-16"  src="./assets/images/laptop.png" alt="Laptop icon" aria-hidden="true" />
           </div>
-          <div>
-            <h3 class="font-bold text-3xl tracking-tight mb-2">Self-Hosted</h3>
+          <hgroup>
+            <h3 class="mb-2 font-bold text-3xl tracking-tight">Self-Hosted</h3>
             <p class="text-xl">
               No monthly bills! Roll your own server or
               <a class="text-indigo-600 hover:text-stone-600" href="https://vdsabev.gumroad.com/l/dbchat" target="_blank">get the desktop app</a>&mdash;one-time
               purchase, free lifetime updates!
             </p>
-          </div>
+          </hgroup>
         </div>
       </div>
     </section>
 
-    <section id="who" class="max-w-4xl mx-auto my-40 rounded-3xl">
-      <h2 class="display-font font-bold mb-4 text-center">Who is it for</h2>
-      <p class="text-2xl mb-5 text-center">
-        DBChat is for anyone who wants to explore their MySQL or PostgreSQL
-        databases without writing SQL. Perfect for:
-      </p>
+    <section id="who" class="max-w-4xl rounded-3xl mx-auto my-20 lg:my-40 px-4">
+      <hgroup>
+        <h2 class="display-font font-bold mb-4 text-center">Who is it for</h2>
+        <p class="text-2xl mb-5 text-center">
+          DBChat is for anyone who wants to explore their MySQL or PostgreSQL
+          databases without writing SQL. Perfect for:
+        </p>
+      </hgroup>
 
-      <div class="border-t border-stone-300 pt-12 mt-12 overflow-x-scroll lg:overflow-hidden">
-        <div class="flex gap-6 text-xl px-4 md:px-0">
-          <div class="flex flex-1 gap-3">
-            <div class="flex-1 min-w-12 aspect-square">
-              <img src="./assets/images/check.png" alt="">
+      <div class="border-t border-stone-300 mt-6 lg:mt-12 pt-6 lg:pt-12">
+        <div class="flex flex-col lg:flex-row gap-6 text-xl px-4 md:px-0">
+          <div class="flex-1 flex gap-3">
+            <div class="min-w-12 w-12 aspect-square">
+              <img src="./assets/images/check.png" alt="" aria-hidden="true">
             </div>
             <p>
               <strong class="text-green-600">Data analysts</strong> who want to quickly query databases
               using natural language and use AI-generated SQL.
             </p>
           </div>
-            
-          <div class="flex flex-1 gap-3">
-            <div class="flex-1 min-w-12 aspect-square">
-              <img src="./assets/images/check.png" alt="">
+
+          <div class="flex-1 flex gap-3">
+            <div class="min-w-12 w-12 aspect-square">
+              <img src="./assets/images/check.png" alt="" aria-hidden="true">
             </div>
             <p>
               <strong class="text-green-600">Developers</strong> looking to streamline database
@@ -167,9 +168,9 @@
             </p>
           </div>
 
-          <div class="flex flex-1 gap-3">
-            <div class="flex-1 min-w-12 aspect-square">
-              <img src="./assets/images/check.png" alt="">
+          <div class="flex-1 flex gap-3">
+            <div class="min-w-12 w-12 aspect-square">
+              <img src="./assets/images/check.png" alt="" aria-hidden="true">
             </div>
             <p>
               <strong class="text-green-600">Business owners</strong> needing fast insights from their
@@ -180,18 +181,19 @@
       </div>
     </section>
 
-    <section id="quickstart" class="max-w-4xl mx-auto my-16">
+    <section id="quickstart" class="max-w-4xl mx-auto my-16 px-4">
       <h2 class="display-font font-bold mb-4 text-center">Quickstart</h2>
-      
-      <div class="flex flex-col text-center bg-white py-12 px-10 rounded-3xl border border-stone-300 gap-7 shadow-2xl shadow-stone-900/15 mb-10">
+
+      <div class="flex flex-col gap-7 rounded-3xl border border-stone-300 shadow-2xl shadow-stone-900/15 mb-10 bg-white py-12 px-10 text-center">
         <hgroup>
           <h3 class="text-4xl font-bold mb-3">Get started in minutes</h3>
           <p class="text-2xl">Download the desktop app&mdash;one-time purchase, free lifetime updates!</p>
         </hgroup>
+
         <a
           href="https://vdsabev.gumroad.com/l/dbchat"
           target="_blank"
-          class="inline-flex self-center gap-3 items-center bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white  border border-green-600 text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
+          class="inline-flex self-center items-center gap-3 bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white border border-green-600 text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
         >
           <svg width="24" height="25" viewBox="0 0 24 25" class="fill-green-200 group-hover:fill-white">
             <use href="#icon-download"></use>
@@ -200,16 +202,18 @@
           Buy the Desktop App
         </a>
       </div>
-      <div class="flex flex-col bg-white py-12 px-10 rounded-3xl border border-stone-300 gap-7 shadow-2xl shadow-stone-900/15">
+
+      <!-- TODO: Link to GitHub, octocat logo -->
+      <div id="self-host" class="flex flex-col gap-4 lg:gap-7 rounded-3xl border border-stone-300 shadow-2xl shadow-stone-900/15 bg-white px-4 py-6 lg:px-10 lg:py-12">
         <h3 class="text-4xl font-bold mb-3">Or run the source code locally</h3>
         <ol class="text-xl">
           <li class="p-3 bg-white">
             <div class="flex items-baseline gap-2">
-              <span class="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">1</span>
+              <span class="flex items-center justify-center min-w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">1</span>
               Clone the repo, install dependencies, and start the server:
             </div>
 
-            <pre class="rounded-lg mt-3 bg-stone-800 p-6 text-white text-left text-lg">
+            <pre class="overflow-x-auto rounded-lg mt-3 bg-stone-800 p-6 text-white text-left text-lg">
 <code>git clone git@github.com:PactInteractive/dbchat.git
 cd dbchat
 bun install
@@ -218,22 +222,22 @@ bun dev</code></pre>
 
           <li class="p-3 bg-white">
             <div class="flex items-baseline gap-2">
-              <span class="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">2</span>
+              <span class="flex items-center justify-center min-w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">2</span>
               <p><strong>Connect a database</strong> - Link to your MySQL or PostgreSQL database.</p>
             </div>
           </li>
 
           <li class="p-3 bg-white">
             <div class="flex items-baseline gap-2">
-              <span class="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">3</span>
+              <span class="flex items-center justify-center min-w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">3</span>
               <p><strong>Add an AI API key</strong> - Use your favorite AI provider or get a Gemini key from
               <a class="text-indigo-600" href="https://aistudio.google.com/app/apikey" target="_blank" rel="nofollow">Google AI Studio</a>.</p>
             </div>
           </li>
 
-          <li class="p-3 bg-white">          
+          <li class="p-3 bg-white">
             <div class="flex items-baseline gap-2">
-              <span class="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">4</span>
+              <span class="flex items-center justify-center min-w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">4</span>
               <p><strong>Start chatting</strong> - Open <a class="text-indigo-600" href="http://localhost:3000" target="_blank">localhost:3000</a>
               and prompt away!</p>
             </div>
@@ -242,7 +246,7 @@ bun dev</code></pre>
       </div>
     </section>
 
-    <section id="faq" class="max-w-4xl mx-auto mb-14">
+    <section id="faq" class="max-w-4xl mx-auto mb-14 px-4">
       <h2 class="display-font font-bold text-center mb-10">Frequent Questions</h2>
 
       <div class="flex flex-wrap gap-10">

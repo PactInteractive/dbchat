@@ -1,8 +1,9 @@
 @import 'tailwindcss';
 
 :root {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
 
 .display-font {
