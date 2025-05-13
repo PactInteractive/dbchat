@@ -10,7 +10,7 @@
     <meta property="og:description" content="Use AI to chat with a MySQL/PostgreSQL database using Google/OpenAI/xAI models">
     <meta property="og:image" content="https://pactinteractive.github.io/dbchat/assets/images/logo.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="h3_large_image">
     <meta property="twitter:url" content="/">
     <meta name="twitter:title" content="DBChat - Chat with your Database">
     <meta name="twitter:description" content="Use AI to chat with a MySQL/PostgreSQL database using Google/OpenAI/xAI models">
@@ -242,75 +242,79 @@ bun dev</code></pre>
       </div>
     </section>
 
-    <section id="faq" class="max-w-3xl mx-auto mb-14">
-      <h2 class="text-3xl font-bold mb-5">Frequent Questions</h2>
+    <section id="faq" class="max-w-4xl mx-auto mb-14">
+      <h2 class="display-font font-bold text-center mb-10">Frequent Questions</h2>
 
-      <div>
-        <details class="py-3 border-t border-stone-300">
-          <summary class="text-lg font-bold cursor-pointer">
-            How does DBChat work?
-          </summary>
+      <div class="flex flex-wrap gap-10">
+        <div class="flex-1 min-w-[300px] flex flex-col gap-2">
+           <div class="py-3 text-xl">
+              <h3 class="text-3xl font-bold cursor-pointer mb-3">
+                How does DBChat work?
+              </h3>
 
-          <p>
-            DBChat is distributed as a desktop app that lets you query MySQL and PostgreSQL
-            databases using natural language. It connects to your local database,
-            uses your AI API key (Google, OpenAI, or xAI), and generates SQL
-            queries based on your prompts, which you can review, copy, or execute.
-          </p>
+              <p class="mt-2">
+                DBChat is distributed as a desktop app that lets you query MySQL and PostgreSQL
+                databases using natural language. It connects to your local database,
+                uses your AI API key (Google, OpenAI, or xAI), and generates SQL
+                queries based on your prompts, which you can review, copy, or execute.
+              </p>
 
-          <p class="mt-2">
-            You can also use the source code to run your own server and web app.
-          </p>
-        </details>
+              <p class="mt-2">
+                You can also use the source code to run your own server and web app.
+              </p>
+            </div>
 
-        <details class="py-3 border-t border-stone-300">
-          <summary class="text-lg font-bold cursor-pointer">
+            <div class="py-3 text-xl">
+              <h3 class="text-3xl font-bold cursor-pointer mb-3">
+                How secure is DBChat?
+              </h3>
+
+              DBChat runs locally, storing your database credentials and API keys on
+              your machine. The AI only reads your database schema unless you explicitly share
+              query results in the chat.
+            </div>
+        </div>
+
+        <div class="flex-1 min-w-[300px] flex flex-col gap-2">
+          <div class="py-3 text-xl">
+          <h3 class="text-3xl font-bold cursor-pointer mb-3">
             What databases does DBChat support?
-          </summary>
+          </h3>
 
           DBChat supports MySQL and PostgreSQL. For other databases, contact us on
           <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>.
-        </details>
+        </div>
 
-        <details class="py-3 border-t border-stone-300">
-          <summary class="text-lg font-bold cursor-pointer">
+        <div class="py-3 text-xl">
+          <h3 class="text-3xl font-bold cursor-pointer mb-3">
             Which AI APIs does DBChat support?
-          </summary>
+          </h3>
 
           DBChat supports Google’s Gemini, OpenAI, and xAI. Need another API?
           Reach out on
           <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>.
-        </details>
+        </div>
 
-        <details class="py-3 border-t border-stone-300">
-          <summary class="text-lg font-bold cursor-pointer">
-            How secure is DBChat?
-          </summary>
-
-          DBChat runs locally, storing your database credentials and API keys on
-          your machine. The AI only reads your database schema unless you explicitly share
-          query results in the chat.
-        </details>
-
-        <details class="py-3 border-t border-stone-300">
-          <summary class="text-lg font-bold cursor-pointer">
+        <div class="py-3 text-xl">
+          <h3 class="text-3xl font-bold cursor-pointer mb-3">
             What’s your refund policy?
-          </summary>
+          </h3>
 
           For refund details, visit our
           <a class="text-indigo-600" href="https://vdsabev.gumroad.com/l/dbchat">Gumroad page</a>.
-        </details>
+        </div>
 
-        <details class="py-3 border-t border-stone-300">
-          <summary class="text-lg font-bold cursor-pointer">
+        <div class="py-3 text-xl">
+          <h3 class="text-3xl font-bold cursor-pointer mb-3">
             I need another feature, can you do that for me?
-          </summary>
+          </h3>
 
           Let us know what you need on
           <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>
           or file an issue on
           <a class="text-indigo-600" href="https://github.com/PactInteractive/dbchat/issues" target="_blank">GitHub</a>.
-        </details>
+        </div>
+        </div>
       </div>
     </section>
 
