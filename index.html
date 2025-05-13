@@ -180,70 +180,66 @@
       </div>
     </section>
 
-    <section id="quickstart" class="max-w-3xl mx-auto my-16">
-      <hgroup>
-        <h2 class="display-font font-bold mb-4 text-center">Quickstart</h2>
-        <p class="text-xl mb-3">Get started with DBChat in minutes</p>
-        <p>Download the desktop app&mdash;one-time purchase, free lifetime updates!</p>
-        <p class="mt-6 mb-8">
-          <a
-            href="https://vdsabev.gumroad.com/l/dbchat"
-            target="_blank"
-            class="rounded-xl shadow-md shadow-emerald-900/80 ring ring-emerald-1000 bg-emerald-200 text-emerald-900 px-5 py-3 font-bold text-nowrap"
-          >
-            Download the Desktop App
-          </a>
-        </p>
-      </hgroup>
+    <section id="quickstart" class="max-w-4xl mx-auto my-16">
+      <h2 class="display-font font-bold mb-4 text-center">Quickstart</h2>
+      
+      <div class="flex flex-col text-center bg-white py-12 px-10 rounded-3xl border border-stone-300 gap-7 shadow-2xl shadow-stone-900/15 mb-10">
+        <hgroup>
+          <h3 class="text-4xl font-bold mb-3">Get started in minutes</h3>
+          <p class="text-2xl">Download the desktop app&mdash;one-time purchase, free lifetime updates!</p>
+        </hgroup>
+        <a
+          href="https://vdsabev.gumroad.com/l/dbchat"
+          target="_blank"
+          class="inline-flex self-center gap-3 items-center bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white  border border-green-600 text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
+        >
+          <svg width="24" height="25" viewBox="0 0 24 25" class="fill-green-200 group-hover:fill-white">
+            <use href="#icon-download"></use>
+          </svg>
 
-      <p class="text-xl mt-6 mb-1">Or run the source code locally</p>
-      <ol>
-        <li class="p-3 bg-white">
-          <div class="flex items-baseline gap-2">
-            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white">1</span>
-            Clone the repo, install dependencies, and start the server:
-          </div>
+          Buy the Desktop App
+        </a>
+      </div>
+      <div class="flex flex-col bg-white py-12 px-10 rounded-3xl border border-stone-300 gap-7 shadow-2xl shadow-stone-900/15">
+        <h3 class="text-4xl font-bold mb-3">Or run the source code locally</h3>
+        <ol class="text-xl">
+          <li class="p-3 bg-white">
+            <div class="flex items-baseline gap-2">
+              <span class="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">1</span>
+              Clone the repo, install dependencies, and start the server:
+            </div>
 
-          <pre class="rounded-lg mt-3 bg-stone-800 p-3 text-white"><code>git clone git@github.com:PactInteractive/dbchat.git
+            <pre class="rounded-lg mt-3 bg-stone-800 p-6 text-white text-left text-lg">
+<code>git clone git@github.com:PactInteractive/dbchat.git
 cd dbchat
 bun install
 bun dev</code></pre>
-        </li>
+          </li>
 
-        <li class="p-3 bg-white">
-          <div class="flex items-baseline gap-2">
-            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white">2</span>
-            Connect a database
-          </div>
+          <li class="p-3 bg-white">
+            <div class="flex items-baseline gap-2">
+              <span class="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">2</span>
+              <p><strong>Connect a database</strong> - Link to your MySQL or PostgreSQL database.</p>
+            </div>
+          </li>
 
-          <p>Link to your MySQL or PostgreSQL database.</p>
-        </li>
+          <li class="p-3 bg-white">
+            <div class="flex items-baseline gap-2">
+              <span class="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">3</span>
+              <p><strong>Add an AI API key</strong> - Use your favorite AI provider or get a Gemini key from
+              <a class="text-indigo-600" href="https://aistudio.google.com/app/apikey" target="_blank" rel="nofollow">Google AI Studio</a>.</p>
+            </div>
+          </li>
 
-        <li class="p-3 bg-white">
-          <div class="flex items-baseline gap-2">
-            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white">3</span>
-            Add an AI API key
-          </div>
-
-          <p>
-            Use your favorite AI provider or get a Gemini key from
-            <a class="text-indigo-600" href="https://aistudio.google.com/app/apikey" target="_blank" rel="nofollow">Google AI Studio</a>.
-          </p>
-        </li>
-
-        <li class="p-3 bg-white">          
-          <div class="flex items-baseline gap-2">
-            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-600 text-white">4</span>
-            Start chatting
-          </div>
-
-          <p>
-            Open
-            <a class="text-indigo-600" href="http://localhost:3000" target="_blank">localhost:3000</a>
-            and prompt away!
-          </p>
-        </li>
-      </ol>
+          <li class="p-3 bg-white">          
+            <div class="flex items-baseline gap-2">
+              <span class="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-[#F7E0DD] text-stone-900">4</span>
+              <p><strong>Start chatting</strong> - Open <a class="text-indigo-600" href="http://localhost:3000" target="_blank">localhost:3000</a>
+              and prompt away!</p>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
     <section id="faq" class="max-w-3xl mx-auto mb-14">
