@@ -37,7 +37,7 @@
   </head>
 
   <body class="bg-stone-100/80 text-stone-900">
-    <section class="flex flex-col gap-24 px-4 pt-12">
+    <section class="flex flex-col gap-12 lg:gap-24 px-4 pt-12">
       <div class="flex flex-col items-center justify-center gap-10 max-w-5xl mx-auto">
         <div class="blur-[150px] opacity-35 absolute -z-10 right-2 will-change-transform" aria-hidden="true">
           <div class="w-[836px] h-[527px] bg-conic bg-conic-270 from-[#F3CEFF] via-70% via-[#F9DE5B] to-80% to-[#C429F6]" style="clip-path: path('M142.268 526.196.502 402.806l263.553-79.258L619.86 295.21 640.327.804l195.022 184.102-133.622 288.881-398.313-59.826-161.146 112.235Z');"></div>
@@ -53,7 +53,7 @@
 
           <h1 class="display-font font-bold">Chat with your Database</h1>
 
-          <p class="text-2xl font-light">
+          <p class="text-xl lg:text-2xl font-light">
             DBChat is your AI-powered gateway to database exploration.
             <br />
             Effortlessly create queries for your MySQL and PostgreSQL databases
@@ -61,32 +61,33 @@
           </p>
         </hgroup>
 
-        <div class="flex flex-col lg:flex-row lg:items-center gap-6 font-bold text-2xl text-center">
+        <div class="flex flex-col lg:flex-row lg:items-center gap-6 font-bold text-xl lg:text-2xl text-center">
           <a
             href="https://vdsabev.gumroad.com/l/dbchat"
             target="_blank"
-            class="flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white border border-green-600 text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
+            class="flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white border border-green-600 text-xl lg:text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
           >
             <svg width="24" height="25" viewBox="0 0 24 25" class="fill-green-200 group-hover:fill-white">
               <use href="#icon-download"></use>
             </svg>
             Buy the Desktop App
           </a>
-          or
+          <span class="hidden lg:inline">or</span>
           <a
             href="#self-host"
-            class="bg-gradient-to-r from-white/25 to-white/70 rounded-full px-9 py-4 text-2xl font-bold text-nowrap border border-stone-300 text-stone-900 shadow-2xl shadow-stone-900/15 hover:shadow-xl hover:shadow-stone-900/15 transition-all duration-200 hover:border-stone-400"
+            class="bg-gradient-to-r from-white/25 to-white/70 rounded-full px-9 py-4 text-xl lg:text-2xl font-bold text-nowrap border border-stone-300 text-stone-900 shadow-2xl shadow-stone-900/15 hover:shadow-xl hover:shadow-stone-900/15 transition-all duration-200 hover:border-stone-400"
           >Self-Host for Free</a>
         </div>
       </div>
 
-      <div class="w-full max-w-6xl bg-white  mx-auto shadow-lg p-4 rounded-[44px] border border-stone-200">
+      <div class="w-full max-w-6xl bg-white mx-auto shadow-lg lg:p-4 rounded-[44px] border border-stone-200">
         <video
           src="./assets/demo-3x.mp4"
-          class="w-full aspect-[16/9] rounded-[28px]"
+          class="w-full aspect-[16/9] rounded-lg lg:rounded-[28px]"
           autoplay
           loop
           muted
+          controls
         ></video>
       </div>
     </section>
@@ -147,8 +148,8 @@
         <div class="w-[836px] h-[527px] bg-conic bg-conic-270 from-[#F3CEFF] via-70% via-[#F9DE5B] to-80% to-[#C429F6]" style="clip-path: path('M142.268 526.196.502 402.806l263.553-79.258L619.86 295.21 640.327.804l195.022 184.102-133.622 288.881-398.313-59.826-161.146 112.235Z');"></div>
       </div>
       <hgroup>
-        <h2 class="display-font font-bold mb-4 text-center">Who is it for</h2>
-        <p class="text-2xl mb-5 text-center">
+        <h2 class="display-font font-bold mb-4 lg:text-center">Who is it for</h2>
+        <p class="text-xl lg:text-2xl mb-5 lg:text-center">
           DBChat is for anyone who wants to explore their MySQL or PostgreSQL
           databases without writing SQL. Perfect for:
         </p>
@@ -190,7 +191,7 @@
     </section>
 
     <section id="quickstart" class="max-w-4xl mx-auto my-20 lg:my-40 px-4">
-      <h2 class="display-font font-bold mb-4 text-center">Quickstart</h2>
+      <h2 class="display-font font-bold mb-12 text-center">Quickstart</h2>
 
       <div class="rounded-3xl border border-stone-500/40 shadow-2xl shadow-stone-900/15 mb-10 bg-white py-12 px-10 text-center relative overflow-clip">
         <div class="blur-[50px] opacity-75 absolute z-1 will-change-transform left-1/2 bottom-0 -translate-x-1/2" aria-hidden="true">
@@ -199,13 +200,13 @@
         <div class="relative z-2 flex flex-col gap-7">
           <hgroup>
             <h3 class="text-4xl font-bold mb-3">Get started in minutes</h3>
-            <p class="text-2xl">Download the desktop app&mdash;one-time purchase, free lifetime updates!</p>
+            <p class="text-xl lg:text-2xl">Download the desktop app&mdash;one-time purchase, free lifetime updates!</p>
           </hgroup>
 
           <a
             href="https://vdsabev.gumroad.com/l/dbchat"
             target="_blank"
-            class="inline-flex self-center items-center gap-3 bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white border border-green-600 text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
+            class="inline-flex self-center items-center gap-3 bg-gradient-to-r from-green-600 to-green-400 rounded-full px-9 py-4 text-white border border-green-600 text-xl lg:text-2xl font-bold text-nowrap text-shadow-xs shadow-2xl shadow-green-900/35 hover:shadow-xl hover:shadow-green-900/30 transition-all duration-200 hover:border-green-700"
           >
             <svg width="24" height="25" viewBox="0 0 24 25" class="fill-green-200 group-hover:fill-white">
               <use href="#icon-download"></use>
@@ -215,7 +216,7 @@
         </div>
       </div>
 
-      <div id="self-host" class="flex flex-col gap-4 lg:gap-7 rounded-3xl border border-stone-300 shadow-2xl shadow-stone-900/15 bg-white px-4 py-6 lg:px-10 lg:py-12">
+      <div id="self-host" class="flex flex-col gap-4 lg:gap-7 rounded-3xl border border-stone-300 shadow-2xl shadow-stone-900/15 bg-white p-6 lg:px-10 lg:py-12">
         <h3 class="text-4xl font-bold mb-3">Or run the source code locally</h3>
         <ol class="text-xl">
           <li class="p-3 bg-white">
@@ -354,7 +355,7 @@ bun dev</code></pre>
         </a>
 
         <p>
-          Made with ❤️ by
+          Made with <img src="assets/images/heart.png" alt="" class="inline w-6 h-6 align-middle"> by
           <a class="text-indigo-600 hover:hover:text-stone-600" href="https://x.com/vdsabev" target="_blank" rel="me">@vdsabev</a> and
           <a class="text-indigo-600 hover:hover:text-stone-600" href="https://x.com/boyankostov" target="_blank" rel="me">@boyankostov</a>
         </p>

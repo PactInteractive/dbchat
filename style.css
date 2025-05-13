@@ -7,11 +7,16 @@
 }
 
 .display-font {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
   letter-spacing: -0.06em;
+  line-height: 1.2;
 }
-
+@media (min-width: var(--breakpoint-lg)) {
+  .display-font {
+    font-size: 4.5rem;
+  }
+}
 
 p {
   line-height: 1.5;
