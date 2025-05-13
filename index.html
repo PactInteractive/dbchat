@@ -18,19 +18,12 @@
 
 		<link rel="icon" type="image/png" href="./logo.png">
 		<link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <!-- <header class="bg-stone-100/50 sticky top-0 backdrop-blur-2xl">
-      <nav>
-        <ul class="flex gap-4 items-center justify-center py-5">
-          <li><a href="#who">Who is it for</a></li>
-          <li><a href="#how">How to get started</a></li>
-          <li><a href="#faq">Frequent questions</a></li>
-        </ul>
-      </nav>
-    </header> -->
-
     <section class="bg-stone-50 mesh1 text-white py-16 pt-12 flex flex-col gap-12">
       <div class="max-w-3xl mx-auto flex flex-col gap-10 items-center justify-center">
         <hgroup class="flex flex-col gap-4 items-center justify-center text-center">
@@ -69,7 +62,6 @@
     </section>
 
     <section id="features" class="max-w-3xl mx-auto my-16">
-      <h2 class="text-3xl font-bold mb-5">Features</h2>
       <div class="grid grid-cols-2 gap-4">
         <div class="border border-stone-300 rounded-lg bg-white p-5 min-h-48">
           <h3 class="mb-1 font-bold">💬 Natural Language Queries</h3>
@@ -101,30 +93,38 @@
     </section>
 
     <section id="who" class="max-w-3xl mx-auto my-16 rounded-3xl">
-      <h2 class="text-3xl font-bold mb-5">Who is it for</h2>
-      <p class="text-xl mb-5">
+      <h2 class="display-font font-bold mb-4 text-center">Who is it for</h2>
+      <p class="text-2xl mb-5 text-center">
         DBChat is for anyone who wants to explore their MySQL or PostgreSQL
         databases without writing SQL. Perfect for:
       </p>
 
-      <div class="flex gap-5">
-        <div class="border flex-1 border-stone-300 bg-stone-50 text-stone-900 rounded-lg p-5">
+      <div class="flex gap-5 border-t border-stone-300 text-xl pt-12">
+        <div class="flex gap-3">
+          <div>
+            <img src="./src/images/check.png" alt="">
+          </div>
           <p>
-            <strong>Data analysts</strong> who want to quickly query databases
+            <strong class="text-green-600">Data analysts</strong> who want to quickly query databases
             using natural language and understand AI-generated SQL.
           </p>
-        </div>
-
-        <div class="border flex-1 border-stone-300 bg-stone-50 text-stone-900 rounded-lg p-5">
+          
+        <div class="flex gap-3">
+          <div>
+            <img src="./src/images/check.png" alt="">
+          </div>
           <p>
-            <strong>Developers</strong> looking to streamline database
+            <strong class="text-green-600">Developers</strong> looking to streamline database
             exploration without complex query writing.
           </p>
         </div>
 
-        <div class="border flex-1 border-stone-300 bg-stone-50 text-stone-900 rounded-lg p-5">
+        <div class="flex gap-3">
+          <div>
+            <img src="./src/images/check.png" alt="">
+          </div>
           <p>
-            <strong>Business owners</strong> needing fast insights from their
+            <strong class="text-green-600">Business owners</strong> needing fast insights from their
             data without technical expertise.
           </p>
         </div>
