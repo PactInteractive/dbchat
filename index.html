@@ -198,12 +198,10 @@
           <svg width="24" height="25" viewBox="0 0 24 25" class="fill-green-200 group-hover:fill-white">
             <use href="#icon-download"></use>
           </svg>
-
           Buy the Desktop App
         </a>
       </div>
 
-      <!-- TODO: Link to GitHub, octocat logo -->
       <div id="self-host" class="flex flex-col gap-4 lg:gap-7 rounded-3xl border border-stone-300 shadow-2xl shadow-stone-900/15 bg-white px-4 py-6 lg:px-10 lg:py-12">
         <h3 class="text-4xl font-bold mb-3">Or run the source code locally</h3>
         <ol class="text-xl">
@@ -251,32 +249,39 @@ bun dev</code></pre>
 
       <div class="flex flex-wrap gap-10">
         <div class="flex-1 min-w-[300px] flex flex-col gap-2">
-           <div class="py-3 text-xl">
-              <h3 class="text-3xl font-bold cursor-pointer mb-3">
-                How does DBChat work?
-              </h3>
+          <div class="py-3 text-xl">
+            <h3 class="text-3xl font-bold cursor-pointer mb-3">
+              What does DBChat do?
+            </h3>
 
-              <p class="mt-2">
-                DBChat is distributed as a desktop app that lets you query MySQL and PostgreSQL
-                databases using natural language. It connects to your local database,
-                uses your AI API key (Google, OpenAI, or xAI), and generates SQL
-                queries based on your prompts, which you can review, copy, or execute.
-              </p>
+            <p>
+              DBChat lets you connect to your local or cloud MySQL or PostgreSQL database
+              with your own AI API key, and use natural language to
+              generate SQL queries which you can review, copy, or execute.
+            </p>
+          </div>
 
-              <p class="mt-2">
-                You can also use the source code to run your own server and web app.
-              </p>
-            </div>
+          <div class="py-3 text-xl">
+            <h3 class="text-3xl font-bold cursor-pointer mb-3">
+              How do I install DBChat?
+            </h3>
 
-            <div class="py-3 text-xl">
-              <h3 class="text-3xl font-bold cursor-pointer mb-3">
-                How secure is DBChat?
-              </h3>
+            <p>
+              DBChat is distributed in 2 forms&mdash;a paid desktop app to start querying immediately,
+              or you can download the source code and run it as a web app in your browser.
+              </ol>
+            </p>
+          </div>
 
-              DBChat runs locally, storing your database credentials and API keys on
-              your machine. The AI only reads your database schema unless you explicitly share
-              query results in the chat.
-            </div>
+          <div class="py-3 text-xl">
+            <h3 class="text-3xl font-bold cursor-pointer mb-3">
+              How secure is DBChat?
+            </h3>
+
+            DBChat runs locally, storing your database credentials and API keys on
+            your device. The AI only reads your database schema unless you explicitly share
+            query results in the chat.
+          </div>
         </div>
 
         <div class="flex-1 min-w-[300px] flex flex-col gap-2">
@@ -285,8 +290,10 @@ bun dev</code></pre>
             What databases does DBChat support?
           </h3>
 
-          DBChat supports MySQL and PostgreSQL. For other databases, contact us on
-          <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>.
+          <p>
+            DBChat supports MySQL and PostgreSQL. For other databases, contact us on
+            <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>.
+          </p>
         </div>
 
         <div class="py-3 text-xl">
@@ -294,9 +301,10 @@ bun dev</code></pre>
             Which AI APIs does DBChat support?
           </h3>
 
-          DBChat supports Google’s Gemini, OpenAI, and xAI. Need another API?
-          Reach out on
-          <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>.
+          <p>
+            DBChat supports Google’s Gemini, OpenAI, and xAI. Need another API? Reach out on
+            <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>.
+          </p>
         </div>
 
         <div class="py-3 text-xl">
@@ -304,8 +312,10 @@ bun dev</code></pre>
             What’s your refund policy?
           </h3>
 
-          For refund details, visit our
-          <a class="text-indigo-600" href="https://vdsabev.gumroad.com/l/dbchat">Gumroad page</a>.
+          <p>
+            For refund details about the paid desktop app, visit our
+            <a class="text-indigo-600" href="https://vdsabev.gumroad.com/l/dbchat">Gumroad page</a>.
+          </p>
         </div>
 
         <div class="py-3 text-xl">
@@ -313,17 +323,23 @@ bun dev</code></pre>
             I need another feature, can you do that for me?
           </h3>
 
-          Let us know what you need on
-          <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>
-          or file an issue on
-          <a class="text-indigo-600" href="https://github.com/PactInteractive/dbchat/issues" target="_blank">GitHub</a>.
-        </div>
+          <p>
+            Let us know what you need on
+            <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">X.com</a>
+            or file an issue on
+            <a class="text-indigo-600" href="https://github.com/PactInteractive/dbchat/issues" target="_blank">GitHub</a>.
+          </p>
         </div>
       </div>
     </section>
 
     <footer class="bg-stone-50 py-8 border-t border-stone-300">
       <div class="max-w-3xl mx-auto text-center text-sm">
+        <a class="inline-flex items-center gap-2 mb-4 text-lg hover:text-indigo-600 transition duration-200" href="https://github.com/PactInteractive/dbchat" target="_blank">
+          <img class="w-6 h-6" src="./assets/images/github-mark.svg" alt="" aria-hidden="true">
+          PactInteractive/dbchat
+        </a>
+
         <p>
           Made with ❤️ by
           <a class="text-indigo-600" href="https://x.com/vdsabev" target="_blank" rel="me">@vdsabev</a> and
@@ -336,9 +352,9 @@ bun dev</code></pre>
         </p>
 
         <p class="mt-3">
-          <a href="https://github.com/PactInteractive/dbchat/issues" target="_blank">Report an Issue</a>
-          &bull;
           <a href="https://vdsabev.gumroad.com/l/dbchat" target="_blank">Download the Desktop App</a>
+          &bull;
+          <a href="https://github.com/PactInteractive/dbchat/issues" target="_blank">Report an Issue</a>
         </p>
       </div>
     </footer>
