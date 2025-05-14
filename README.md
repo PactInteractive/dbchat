@@ -35,9 +35,7 @@
 	<a href="https://vdsabev.gumroad.com/l/dbchat">Download the Desktop App</a>
 </p>
 
-<p align="center">
-  <video src="https://raw.githubusercontent.com/PactInteractive/dbchat/gh-pages/assets/demo-3x.mp4" width="100%" />
-</p>
+[Watch demo (3x speed)](https://github.com/user-attachments/assets/f60be9a0-d39e-42ee-8bff-c6bdd11d6211)
 
 ## ✨ Features
 
