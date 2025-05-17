@@ -65,12 +65,14 @@ export class MessageType {
   id: string;
   type: 'prompt' | 'response' | 'results';
   text: string;
+  model: string | null;
   chat_id: string;
 
   constructor(data: MessageType) {
     this.id = data.id;
     this.type = data.type;
     this.text = data.text;
+    this.model = data.model;
     this.chat_id = data.chat_id;
   }
 }

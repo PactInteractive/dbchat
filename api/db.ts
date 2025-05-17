@@ -1,5 +1,5 @@
 import { Database as SQLiteDatabase } from 'bun:sqlite';
-import { mkdirSync } from 'fs';
+import { mkdir, readdir } from 'node:fs/promises';
 import { homedir, platform } from 'os';
 import { join } from 'path';
 
@@ -22,16 +22,26 @@ function getAppDataDir(appName) {
 
 const dataDir = join(getAppDataDir('dbchat'), 'data');
 try {
-  mkdirSync(dataDir, { recursive: true });
+  await mkdir(dataDir, { recursive: true });
 } catch (error) {
   console.error('Failed to create data directory:', error);
   throw error;
 }
 const dbPath = join(dataDir, 'dbchat.sqlite');
-const db = new SQLiteDatabase(dbPath, { create: true });
+export const db = new SQLiteDatabase(dbPath, { create: true });
 
 // WAL
 db.exec('PRAGMA journal_mode = WAL;');
+
+// Migrations
+const files = await readdir(join(__dirname, 'migrations'));
+for (const file of files) {
+  const { apply } = await import(join(__dirname, 'migrations', file));
+  const applied = await apply(db);
+  if (applied) {
+    console.log(`✅ Applied ${file}`);
+  }
+}
 
 // Api Keys
 // ------------------------------
@@ -260,11 +270,20 @@ db.exec(`
 // ------------------------------
 export class Message extends MessageType {
   // Create
-  static async create(data: Pick<Message, 'type' | 'text' | 'chat_id'>) {
+  static async create(data: Pick<Message, 'type' | 'text' | 'model' | 'chat_id'>) {
     const message = new Message({ ...data, id: Bun.randomUUIDv7() });
 
-    const createQuery = db.query(`INSERT INTO messages (id, type, text, chat_id) VALUES ($id, $type, $text, $chat_id)`);
-    createQuery.run({ $id: message.id, $type: message.type, $text: message.text, $chat_id: message.chat_id });
+    const createQuery = db.query(`
+      INSERT INTO messages (id, type, text, model, chat_id)
+      VALUES ($id, $type, $text, $model, $chat_id)
+    `);
+    createQuery.run({
+      $id: message.id,
+      $type: message.type,
+      $text: message.text,
+      $model: message.model,
+      $chat_id: message.chat_id,
+    });
     createQuery.finalize();
 
     return message;

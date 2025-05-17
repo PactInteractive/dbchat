@@ -46,12 +46,21 @@
         `"
       >
         <!-- Messages -->
-        <div class="flex-1 flex flex-col px-8 gap-3">
+        <div class="flex-1 flex flex-col gap-3 px-8 pb-4">
           <template v-for="message in messages.data" :key="message.id">
             <div v-if="message.type === 'prompt'" class="self-end max-w-4/5 rounded-xl p-3 bg-neutral-200">
               {{ message.text }}
             </div>
-            <div v-else-if="message.type === 'response'" v-html="parse(message.text)"></div>
+
+            <div v-else-if="message.type === 'response'" class="relative group">
+              <div v-html="parse(message.text)"></div>
+              <small
+                v-if="message.model"
+                class="absolute top-full transition-opacity duration-300 opacity-0  group-hover:opacity-100"
+              >
+                ✨ Generated with {{ message.model }}
+              </small>
+            </div>
 
             <div v-else-if="message.type === 'results'" class="self-end max-w-4/5">
               <div class="text-stone-500 text-sm text-end my-2">You added query results to the chat</div>
@@ -253,6 +262,7 @@ async function sendPrompt(event: KeyboardEvent) {
         id: new Date().toISOString(),
         type: 'prompt',
         text: promptValue,
+        model: null,
         chat_id: chat.data.id,
       };
 
@@ -273,6 +283,7 @@ async function sendPrompt(event: KeyboardEvent) {
             id: new Date().toISOString(),
             type: 'response',
             text,
+            model: null,
             chat_id: chat.data.id,
           };
           messages.data?.push(newResponse);

@@ -70,7 +70,12 @@ export const addResults: Handler<Message, typeof addResultsSchema> = {
   action: '/api/chats/:id/results',
   schema: addResultsSchema,
   handle(params) {
-    return Message.create({ type: 'results', text: params.text, chat_id: params.id });
+    return Message.create({
+      type: 'results',
+      text: params.text,
+      model: null,
+      chat_id: params.id,
+    });
   },
 };
 
@@ -128,7 +133,12 @@ export const prompt: Handler<ReadableStream, typeof promptSchema> = {
     });
 
     // Store the new prompt in the database
-    const promptMessage = await Message.create({ type: 'prompt', text: params.prompt, chat_id: chat.id });
+    const promptMessage = await Message.create({
+      type: 'prompt',
+      text: params.prompt,
+      model: params.model,
+      chat_id: chat.id,
+    });
     if (!promptMessage) {
       throw new InternalServerError('Failed to create prompt message');
     }
@@ -170,7 +180,12 @@ export const prompt: Handler<ReadableStream, typeof promptSchema> = {
               // Don't show in production - just to please Tauri
               Bun.write(Bun.stdout, '\n'); // Final newline
             }
-            await Message.create({ type: 'response', text: responseText, chat_id: chat.id });
+            await Message.create({
+              type: 'response',
+              text: responseText,
+              model: params.model,
+              chat_id: chat.id,
+            });
           } else {
             const warning = `[WARN] No response received. Please check if your API key has access to the selected model ${params.model}.`;
             controller.enqueue(warning);
